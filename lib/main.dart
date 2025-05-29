@@ -1,25 +1,23 @@
 import 'package:flutter/material.dart';
-import 'form_view.dart';
+import 'screens/splash_screen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const CataloniaGourmetApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class CataloniaGourmetApp extends StatelessWidget {
+  const CataloniaGourmetApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Formulari de contacte',
+      title: 'Catalonia Gourmet',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
-        inputDecorationTheme: const InputDecorationTheme(
-          border: OutlineInputBorder(),
-        ),
+        primarySwatch: Colors.deepOrange,
+        fontFamily: 'Roboto',
       ),
-      home: const FormulariContacte(),
+      home: const SplashScreen(),
     );
   }
 }
